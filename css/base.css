@@ -1,0 +1,88 @@
+/* Base styles for Tipsy Turtle Travels */
+
+/* Color variables inspired by the Tissot Seastar watch dial */
+:root {
+    /* Main colors - based on Tissot watch dial */
+    --color-seaBlue-lighter: #2ca4af;
+    --color-seaBlue-light: #00687c;
+    --color-seaBlue: #005460;
+    --color-seaBlue-dark: #003a45;
+    --color-seaBlue-darker: #002a30;
+    
+    /* Accent colors */
+    --color-gold: #d4af37;
+    --color-cream: #f5f0e1;
+    --color-coral: var(--color-seaBlue-light); /* Changed from #ff7e67 to seaBlue-light */
+    
+    /* Background texture */
+    --bg-texture: linear-gradient(to bottom, var(--color-seaBlue-lighter), var(--color-seaBlue-light), var(--color-seaBlue));
+}
+
+/* Tailwind custom classes */
+.bg-seaBlue-lighter { background-color: var(--color-seaBlue-lighter); }
+.bg-seaBlue-light { background-color: var(--color-seaBlue-light); }
+.bg-seaBlue { background-color: var(--color-seaBlue); }
+.bg-seaBlue-dark { background-color: var(--color-seaBlue-dark); }
+.bg-seaBlue-darker { background-color: var(--color-seaBlue-darker); }
+.bg-gold { background-color: var(--color-gold); }
+.bg-cream { background-color: var(--color-cream); }
+.bg-coral { background-color: var(--color-coral); }
+
+.text-seaBlue-lighter { color: var(--color-seaBlue-lighter); }
+.text-seaBlue-light { color: var(--color-seaBlue-light); }
+.text-seaBlue { color: var(--color-seaBlue); }
+.text-seaBlue-dark { color: var(--color-seaBlue-dark); }
+.text-seaBlue-darker { color: var(--color-seaBlue-darker); }
+.text-gold { color: var(--color-gold); }
+.text-cream { color: var(--color-cream); }
+.text-coral { color: var(--color-coral); }
+
+.border-seaBlue-lighter { border-color: var(--color-seaBlue-lighter); }
+.border-seaBlue-light { border-color: var(--color-seaBlue-light); }
+.border-seaBlue { border-color: var(--color-seaBlue); }
+.border-seaBlue-dark { border-color: var(--color-seaBlue-dark); }
+.border-seaBlue-darker { border-color: var(--color-seaBlue-darker); }
+.border-gold { border-color: var(--color-gold); }
+.border-cream { border-color: var(--color-cream); }
+.border-coral { border-color: var(--color-coral); }
+
+.hover\:text-seaBlue-lighter:hover { color: var(--color-seaBlue-lighter); }
+.hover\:text-seaBlue-light:hover { color: var(--color-seaBlue-light); }
+.hover\:text-seaBlue:hover { color: var(--color-seaBlue); }
+.hover\:text-seaBlue-dark:hover { color: var(--color-seaBlue-dark); }
+.hover\:text-seaBlue-darker:hover { color: var(--color-seaBlue-darker); }
+.hover\:text-gold:hover { color: var(--color-gold); }
+.hover\:text-cream:hover { color: var(--color-cream); }
+.hover\:text-coral:hover { color: var(--color-coral); }
+
+.hover\:bg-seaBlue-lighter:hover { background-color: var(--color-seaBlue-lighter); }
+.hover\:bg-seaBlue-light:hover { background-color: var(--color-seaBlue-light); }
+.hover\:bg-seaBlue:hover { background-color: var(--color-seaBlue); }
+.hover\:bg-seaBlue-dark:hover { background-color: var(--color-seaBlue-dark); }
+.hover\:bg-seaBlue-darker:hover { background-color: var(--color-seaBlue-darker); }
+.hover\:bg-gold:hover { background-color: var(--color-gold); }
+.hover\:bg-cream:hover { background-color: var(--color-cream); }
+.hover\:bg-coral:hover { background-color: var(--color-coral); }
+
+.focus\:ring-seaBlue:focus { --tw-ring-color: var(--color-seaBlue); }
+.focus\:ring-gold:focus { --tw-ring-color: var(--color-gold); }
+
+/* Typography */
+.font-montserrat { font-family: 'Montserrat', sans-serif; }
+.font-opensans { font-family: 'Open Sans', sans-serif; }
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom focus styles for better accessibility */
+:focus {
+    outline: 2px solid var(--color-seaBlue-light);
+    outline-offset: 2px;
+}
+
+/* Custom transitions */
+.transition {
+    transition: all 0.3s ease;
+}

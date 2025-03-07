@@ -1,0 +1,103 @@
+/* Custom styles for Tipsy Turtle Travels */
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom focus styles for better accessibility */
+:focus {
+    outline: 2px solid #1e88e5;
+    outline-offset: 2px;
+}
+
+/* Custom transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Custom hover effects for cards */
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom hover effects for social icons */
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Custom hover effects for footer links */
+.footer-link {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #64b5f6;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+/* Custom animation for the hero section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Custom styles for the itinerary day cards */
+.day-card {
+    transition: all 0.3s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom styles for the Instagram spot highlight */
+.instagram-spot {
+    transition: all 0.3s ease;
+}
+
+.instagram-spot:hover {
+    transform: scale(1.02);
+}
+
+/* Custom styles for buttons */
+button:focus, a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.5);
+}
+
+/* Custom styles for form inputs */
+input:focus, textarea:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+}

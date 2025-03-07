@@ -1,0 +1,22 @@
+<!-- Header Partial -->
+<header class="text-white py-4 px-6 absolute top-0 left-0 right-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="font-montserrat font-bold text-xl text-white">Tipsy Turtle Travels</a>
+        </div>
+        <div class="hidden md:flex">
+            <a href="trip-details.html" class="bg-white hover:bg-seaBlue-dark text-seaBlue-dark hover:text-white py-2 px-4 rounded-lg transition font-semibold">Join Next Trip</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-seaBlue-darker py-2 px-4 rounded-lg">
+        <a href="trip-details.html" class="block py-2 bg-white text-seaBlue-dark hover:bg-seaBlue-dark hover:text-white px-4 rounded-lg transition font-semibold">Join Next Trip</a>
+    </div>
+</header>

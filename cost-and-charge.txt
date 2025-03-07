@@ -1,0 +1,5 @@
+early bird price = 60k
+ambassador price = 60k
+regular price = 80k
+
+gst 5% and tcs 5% extra.

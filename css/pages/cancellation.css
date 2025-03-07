@@ -1,0 +1,92 @@
+/* Cancellation Policy page specific styles for Tipsy Turtle Travels */
+
+/* Policy hero section */
+.policy-hero {
+    background-color: var(--color-seaBlue-dark);
+    position: relative;
+    padding: 4rem 0;
+}
+
+.policy-overview {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Policy content section */
+.policy-content {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.policy-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.policy-section:last-child {
+    border-bottom: none;
+}
+
+.policy-section h3 {
+    margin-bottom: 1rem;
+}
+
+.policy-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.policy-item:last-child {
+    margin-bottom: 0;
+}
+
+.policy-icon {
+    color: var(--color-seaBlue);
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+/* Important notes section */
+.important-notes {
+    background-color: rgba(7, 47, 107, 0.05);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.note-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.note-item:last-child {
+    margin-bottom: 0;
+}
+
+.note-item svg {
+    color: var(--color-seaBlue-light);
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+/* Back to trips button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-seaBlue);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-button svg {
+    margin-right: 0.5rem;
+}
+
+.back-button:hover {
+    color: var(--color-seaBlue-dark);
+}

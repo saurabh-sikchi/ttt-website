@@ -1,0 +1,253 @@
+/* Home page specific styles for Tipsy Turtle Travels */
+
+/* Typed.js fade out animation */
+.typed-text-fade-out {
+    opacity: 0;
+    animation: 0;
+    transition: opacity 2s;
+}
+
+/* Hero section with watch dial background */
+.home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Featured trip section */
+.featured-trip {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    /* Removing all borders completely */
+    box-shadow: none;
+}
+
+.featured-trip:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.featured-trip-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 590px;
+    object-position: center;
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+
+/* About section */
+.about-image {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.about-stats {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Why Choose Us section */
+.section-header-container {
+    position: relative;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.section-header-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0,84,96,0) 0%, rgba(0,84,96,0.2) 50%, rgba(0,84,96,0) 100%);
+    z-index: 1;
+}
+
+.section-header-container h2 {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    padding: 0 1.5rem;
+    z-index: 2;
+}
+
+.section-header-container p {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    z-index: 2;
+}
+
+/* Adding subtle borders to differentiate between sections */
+section.py-24 {
+    padding-bottom: 4rem;
+    margin-bottom: 1rem;
+}
+
+section.py-24:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Quote section divider - minimal custom CSS for decorative elements */
+.section-divider {
+    box-shadow: 0 4px 15px rgba(0, 84, 96, 0.1), 0 -4px 15px rgba(0, 84, 96, 0.1);
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0,84,96,0) 0%, rgba(0,84,96,0.3) 50%, rgba(0,84,96,0) 100%);
+}
+
+.section-divider::before {
+    top: 1.5rem;
+}
+
+.section-divider::after {
+    bottom: 1.5rem;
+}
+
+/* Quote marks styling - only for the quote, not the author */
+.section-divider .text-white::before,
+.section-divider .text-white::after {
+    content: "\201C";
+    font-size: 2.5rem;
+    line-height: 0;
+    position: relative;
+    color: var(--color-cream);
+    opacity: 0.8;
+}
+
+.section-divider .text-white::before {
+    top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.section-divider .text-white::after {
+    content: "\201D";
+    bottom: -0.2rem;
+    margin-left: 0.2rem;
+}
+
+/* Adjusting spacing for section titles */
+.section-title {
+    margin-bottom: 5rem;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 84, 96, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 84, 96, 0.2);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    background-color: var(--color-seaBlue);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Add subtle pattern to Why Choose Us section */
+section.bg-seaBlue {
+    position: relative;
+}
+
+/* Enhanced text readability for section titles on dark backgrounds */
+.drop-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ section */
+.faq-container {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact section */
+.contact-form {
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info {
+    background-color: var(--color-seaBlue);
+    color: white;
+    padding: 2rem;
+}
+
+.contact-form-container {
+    padding: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .featured-trip-image {
+        height: 15rem;
+        max-height: 370px; /* Increased by another ~15% from 320px */
+        border-radius: 0.75rem; /* Reinforcing rounded corners on mobile */
+    }
+
+    /* Add some spacing around the image on mobile */
+    .featured-trip .md\:w-1\/2:first-child {
+        padding: 1rem;
+    }
+
+    /* Adjust spacing for section titles on mobile */
+    .section-title {
+        margin-bottom: 3rem;
+    }
+
+    /* Mobile styles for section divider */
+    .section-divider::before,
+    .section-divider::after {
+        width: 60%;
+    }
+    
+    .section-divider .text-white::before,
+    .section-divider .text-white::after {
+        font-size: 2rem;
+    }
+
+    /* Ensure consistent section padding on mobile */
+    section.py-24 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-image {
+        margin-bottom: 1.5rem;
+    }
+}
