@@ -186,6 +186,15 @@ section.bg-seaBlue {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Complete box shadow (including top) for cards */
+.shadow-complete {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:shadow-complete-lg:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 /* FAQ section */
 .faq-container {
     max-width: 48rem;
