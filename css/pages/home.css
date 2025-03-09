@@ -24,6 +24,7 @@
     box-shadow: none;
 }
 
+
 .featured-trip:hover {
     transform: none;
     box-shadow: none;
@@ -34,9 +35,28 @@
     width: 100%;
     object-fit: cover;
     max-height: 590px;
-    object-position: center;
+    object-position: center center; /* Centers both horizontally and vertically */
     cursor: pointer;
     border-radius: 0.75rem;
+    display: block; /* Ensure image is displayed as block */
+}
+
+/* Add positioning context for better centering */
+.featured-trip .md\:w-1\/2:first-child {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.featured-trip .md\:w-1\/2:first-child a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* About section */
@@ -224,14 +244,17 @@ section.bg-seaBlue {
 @media (max-width: 768px) {
     .featured-trip-image {
         height: 15rem;
-        max-height: 370px; /* Increased by another ~15% from 320px */
-        border-radius: 0.75rem; /* Reinforcing rounded corners on mobile */
+        max-height: 370px;
+        border-radius: 0.75rem;
+        /* Ensure centering is maintained on mobile */
+        object-position: center center;
     }
 
     /* Add some spacing around the image on mobile */
     .featured-trip .md\:w-1\/2:first-child {
         padding: 1rem;
     }
+    
 
     /* Adjust spacing for section titles on mobile */
     .section-title {

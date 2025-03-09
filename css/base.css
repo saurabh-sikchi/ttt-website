@@ -1,18 +1,18 @@
 /* Base styles for Tipsy Turtle Travels */
 
-/* Color variables inspired by the Tissot Seastar watch dial */
+/* Color variables inspired by deep ocean blues */
 :root {
-    /* Main colors - based on Tissot watch dial */
-    --color-seaBlue-lighter: #2ca4af;
-    --color-seaBlue-light: #00687c;
-    --color-seaBlue: #005460;
-    --color-seaBlue-dark: #003a45;
-    --color-seaBlue-darker: #002a30;
+    /* Main colors - deep ocean blue palette (lightened) */
+    --color-seaBlue-lighter: #39a9d6;
+    --color-seaBlue-light: #0a6080;
+    --color-seaBlue: #004e66;
+    --color-seaBlue-dark: #003655;
+    --color-seaBlue-darker: #002942;
     
     /* Accent colors */
     --color-gold: #d4af37;
     --color-cream: #f5f0e1;
-    --color-coral: var(--color-seaBlue-light); /* Changed from #ff7e67 to seaBlue-light */
+    --color-coral: var(--color-seaBlue-light); /* Using new seaBlue-light value */
     
     /* Background texture */
     --bg-texture: linear-gradient(to bottom, var(--color-seaBlue-lighter), var(--color-seaBlue-light), var(--color-seaBlue));
