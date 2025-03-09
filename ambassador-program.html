@@ -128,25 +128,61 @@
             
             <div class="max-w-3xl mx-auto">
                 <div class="application-form">
-                    <form id="ambassador-form" class="space-y-4">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc6EIua99_j2D6-Bg_X6PTlV3ZRyh5jqe_NYsOtsjBPcOFlzQ/formResponse"
+                          method="POST"
+                          target="submissionFrameAmbassador"
+                          onsubmit="handleAmbassadorSubmit(event)"
+                          class="space-y-4">
+
+                        <!-- Hidden fields required by Google Forms -->
+                        <input type="hidden" name="fvv" value="1">
+                        <input type="hidden" name="partialResponse" value="[null,null,&quot;7218178642404542108&quot;]">
+                        <input type="hidden" name="pageHistory" value="0">
+                        <input type="hidden" name="fbzx" value="7218178642404542108">
+                        <input type="hidden" name="submissionTimestamp" value="-1">
+
+                        <!-- Visible fields mapped to Google Form entry IDs -->
                         <div>
-                            <label for="name" class="block text-gray-700 font-medium">Full Name</label>
-                            <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <label for="name" class="block text-gray-700 font-medium">Name</label>
+                            <input type="text" id="name" name="entry.578902795" required
+                                   class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 font-medium">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                        </div>
+
                         <div>
                             <label for="phone" class="block text-gray-700 font-medium">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="tel" id="phone" name="entry.1523424449" required
+                                   class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
+
                         <div>
                             <label for="instagram" class="block text-gray-700 font-medium">Instagram Handle</label>
-                            <input type="text" id="instagram" name="instagram" placeholder="@yourusername" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="text" id="instagram" name="entry.1027793671" placeholder="@yourusername"
+                                   class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
-                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded font-semibold">Submit Application</button>
+
+                        <button type="submit"
+                                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded font-semibold">
+                            Submit Application
+                        </button>
                     </form>
+
+                    <!-- Hidden iframe for form submission -->
+                    <iframe name="submissionFrameAmbassador" style="display:none;"></iframe>
+
+                    <!-- Simple success message -->
+                    <div id="ambassadorSuccess" class="hidden mt-4 bg-green-100 text-green-800 p-4 rounded">
+                        Response Submitted! We'll be in touch soon.
+                    </div>
+
+                    <script>
+                        function handleAmbassadorSubmit(event) {
+                            // Delay showing success message
+                            setTimeout(() => {
+                                document.getElementById('ambassadorSuccess').classList.remove('hidden');
+                                document.getElementById('ambassadorSuccess').scrollIntoView({ behavior: 'smooth' });
+                            }, 1500);
+                        }
+                    </script>
                 </div>
             </div>
         </div>
